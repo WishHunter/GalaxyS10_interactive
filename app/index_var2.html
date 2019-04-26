@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Samsung Galaxy</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/style.css" type="text/css">
+  <script src="js/jq.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu&amp;subset=cyrillic" rel="stylesheet">
+</head>
+<body>
+  
+  <header class="screen_one_header">
+    <div class="container">
+      <div class="clearfix">
+        <img src="img/logo.png" alt="" class="logo">
+        <p class="sublogo">Galaxy S10</p>
+        <img src="img/flag.png" alt="" class="flag">
+      </div>
+    </div>
+  </header>
+  <div class="screen_one">
+    <div class="screen_one_body">
+      <h1>Congratulations!</h1>
+      <h2>You have been chosen. <br> Let's see if you're worth the prize.</h2>
+      <a href="" class="btn screen_two_play"><span>play</span></a>
+    </div>
+  </div>
+  <div class="screen_two">
+    <section class="instructions mt-2">
+      <div class="container">
+        <h2>Хочешь приз от Samsung/Samsung Galaxy S10+?</h2>
+        <p class="desc">Собери пазл быстрее других (21) игроков и подтверди свое участие!</p>
+        <div class="steps">
+          <div class="step step1"><span>Передвигай фрагменты пазла, чтобы собрать их в единый рисунок</span></div>
+          <div class="step step2"><span>Когда фрагмент встанет на свое место, он подсветится белым</span></div>
+          <div class="step step3"><span>Подтверди свою победу, нажав на кнопку “Забрать приз”</span></div>
+          <div class="step step4"><span>Оставь номер телефона в открывшемся окне</span></div>
+        </div>
+      </div>
+    </section>
+    <section class="coundown">
+      <div class="container">
+        <div class="countdown-wrap" style="z-index: 11">
+          <svg viewBox="0 0 1200 325" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="1200" height="325">
+              <path d="M389 187.535C389 199.295 396.595 207.38 408.845 207.38C421.34 207.38 428.935 199.295 428.935 187.535C428.935 175.53 421.585 167.445 409.09 167.445C396.84 167.445 389 175.53 389 187.535ZM389 99.09C389 110.85 396.595 118.935 408.845 118.935C421.34 118.935 428.935 110.85 428.935 99.09C428.935 87.085 421.585 79 409.09 79C396.84 79 389 87.085 389 99.09Z" fill="white"></path>
+              <path d="M779 187.535C779 199.295 786.595 207.38 798.845 207.38C811.34 207.38 818.935 199.295 818.935 187.535C818.935 175.53 811.585 167.445 799.09 167.445C786.84 167.445 779 175.53 779 187.535ZM779 99.09C779 110.85 786.595 118.935 798.845 118.935C811.34 118.935 818.935 110.85 818.935 99.09C818.935 87.085 811.585 79 799.09 79C786.84 79 779 87.085 779 99.09Z" fill="white"></path>
+              <text fill="white" xml:space="preserve" style="white-space: pre" font-family="SamsungSharpSans" font-size="245" font-weight="bold" letter-spacing="0em"><tspan id="_minutes_count" x="1020" y="216.9" text-anchor="middle">00</tspan></text>
+              <text transform="rotate(90) translate(140,-520)" fill="white" xml:space="preserve" style="white-space: pre" font-family="SamsungSharpSans" font-size="245" font-weight="bold" letter-spacing="0em"><tspan id="_hours_count" x="0" y="0" text-anchor="middle">00</tspan></text>
+              <text fill="white" xml:space="preserve" style="white-space: pre" font-family="SamsungSharpSans" font-size="245" font-weight="bold" letter-spacing="0em"><tspan id="_days_count" x="180" y="221.9" text-anchor="middle">00</tspan></text>
+            </mask>
+            <g mask="url(#mask0)">
+              <rect width="1200" height="325" fill="url(#paint0_linear)"></rect>
+            </g>
+            <defs>
+              <linearGradient id="paint0_linear" x1="970.5" y1="-2.83349e-05" x2="970.5" y2="286" gradientUnits="userSpaceOnUse">
+                <stop></stop>
+                <stop offset="0.132995"></stop>
+                <stop offset="0.397462" stop-color="#4A4A4A"></stop>
+                <stop offset="0.480008"></stop>
+                <stop offset="0.48395" stop-color="#88918C"></stop>
+                <stop offset="0.487349"></stop>
+                <stop offset="0.51238"></stop>
+                <stop offset="0.515492" stop-color="#666666"></stop>
+                <stop offset="0.518738" stop-color="#D0D9D8"></stop>
+                <stop offset="0.522526" stop-color="#646565"></stop>
+                <stop offset="0.525904" stop-color="white"></stop>
+                <stop offset="0.7564" stop-color="#E5E5E5"></stop>
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <section class="puzzle">
+      <div class="puzzle-comp">
+        <div>
+          <!-- <img class="hilite" src="img/hilite.jpg" style="opacity: 0;"> -->
+          <video muted="" playsinline="" src="img/video.mp4"></video>
+          <div class="puzzle">
+            <div class="tile ui-draggable ui-draggable-handle ui-droppable" style="background-position: 0 0;"></div>
+            <div class="tile ui-draggable ui-draggable-handle ui-droppable" style="background-position: 50% 0;"></div>
+            <div class="tile ui-draggable ui-draggable-handle ui-droppable" style="background-position: 100% 0;"></div>
+            <div class="tile ui-draggable ui-draggable-handle ui-droppable" style="background-position: 0 50%;"></div>
+            <div class="tile ui-draggable ui-draggable-handle ui-droppable" style="background-position: 50% 50%;"></div>
+            <div class="tile ui-draggable ui-draggable-handle ui-droppable" style="background-position: 100% 50%;"></div>
+            <div class="tile ui-draggable ui-draggable-handle ui-droppable" style="background-position: 0 100%;"></div>
+            <div class="tile ui-draggable ui-draggable-handle ui-droppable" style="background-position: 50% 100%;"></div>
+            <div class="tile ui-draggable ui-draggable-handle ui-droppable" style="background-position: 100% 100%;"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="congrats">
+      <div class="filter">
+        <div class="blur"></div>
+        <div class="content image_block image_block_small">
+          <h2>Ты в тройке лидеров!</h2>
+          <p class="desc">Samsung Galaxy S10+ у тебя в кармане!</p>
+          <img src="img/prod.jpg" class="prod" alt="">
+          <a href="" class="btn"><span>забрать приз</span></a>
+        </div>
+        <div class="content check_block">
+          <div class="check">
+            <h2>Вот это скорость!</h2>
+            <p class="desc">Вы собрали пазл быстрее всех!</p>
+            <div class="line_box">
+              <p class="line_text step_1">Ваше время <span class="you_time"></span>...</p>
+              <p class="line_text step_2">Проверка IP адреса...</p>
+              <p class="line_text step_3">Проверка наличия на складе...</p>
+              <p class="line_percent">0%</p>
+              <div class="line_block"></div>
+            </div>
+            <ul>
+              <li><div class="loading step_1"></div><span>Пазл собран быстрее <span class="step_1" data_percent='98.4%'>...</span> участников</span></li>
+              <li><div class="loading step_2"></div><span>Дублированные IP-адреса не найдены!</span></li>
+              <li><div class="loading step_3"></div><span>Призы в наличии!</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <section class="comments">
+    <div class="container">
+      <div class="comments__inner">
+        <p class="comments__title">Comentarios:</p>
+        <ul class="comments__list">
+          <li class="comments__item">
+            <div class="comments__item__item-inner">
+              <div class="comments__item-img"><img src="img/ava-1.jpg" alt="" class="comments__item-ava"></div>
+              <div class="comments__item-tail">
+                <p class="comments__item-name">María González</p>
+                <p class="comments__item-text">¡Jolín! Tengo permiso, pero no queda nada disponible. ¿Por qué? Por favor, aumentad el número de premios :(</p>
+                <p class="comments__item-date">
+                  <script type="text/javascript">
+                    dtime_nums(-3, true)
+                  </script>
+                </p>
+              </div>
+            </div>
+          </li>
+          <li class="comments__item">
+            <div class="comments__item__item-inner">
+              <div class="comments__item-img"><img src="img/ava-2.jpg" alt="" class="comments__item-ava"></div>
+              <div class="comments__item-tail">
+                <p class="comments__item-name">Susana Suárez</p>
+                <p class="comments__item-text">¿El tuyo ha ido deprisa? :( Yo aún estoy esperando...</p>
+                <p class="comments__item-date">
+                  <script type="text/javascript">
+                    dtime_nums(-3, true)
+                  </script>
+                </p>
+              </div>
+            </div>
+          </li>
+          <li class="comments__item comments__item--answer">
+            <div class="comments__item__item-inner">
+              <div class="comments__item-img"><img src="img/ava-3.jpg" alt="" class="comments__item-ava"></div>
+              <div class="comments__item-tail">
+                <p class="comments__item-name">Mónica Sánchez</p>
+                <p class="comments__item-text">¡Qué guay! Nunca había ganado nada hasta hoy, ¡por fin tengo suerte! ¡Gracias!</p>
+                <p class="comments__item-date">
+                  <script type="text/javascript">
+                    dtime_nums(-3, true)
+                  </script>
+                </p>
+              </div>
+            </div>
+          </li>
+          <li class="comments__item">
+            <div class="comments__item__item-inner">
+              <div class="comments__item-img"><img src="img/ava-4.jpg" alt="" class="comments__item-ava"></div>
+              <div class="comments__item-tail">
+                <p class="comments__item-name">Andrés Millán</p>
+                <p class="comments__item-text">¡A mí siempre me dice "prueba de nuevo"! ¡Pero esta es la primera vez! ¡Quiero participar y conseguir el Samsung!</p>
+                <p class="comments__item-date">
+                  <script type="text/javascript">
+                    dtime_nums(-3, true)
+                  </script>
+                </p>
+              </div>
+            </div>
+          </li>
+          <!--Живой  коммент-->
+          <li class="comments__item comments__item--leave">
+            <div class="comments__item__item-inner">
+              <div class="comments__item-img"><img src="img/ava-5.jpg" alt="" class="comments__item-ava"></div>
+              <div class="comments__item-tail">
+                <p class="comments__item-name">Roberto Granados</p>
+                <p class="comments__item-text">... Vaya tela, pensaba que era un fraude, pero me ha llegado hoy. ¿Alguien más ha ganado? jaja</p>
+                <p class="comments__item-date">
+                  Justo ahora
+                </p>
+              </div>
+            </div>
+          </li>
+          <!--Живой  коммент-->
+          <!--Шаблон коммента юзера-->
+          <li class="comments__item comments__item--user" style="display: none">
+            <div class="comments__item__item-inner">
+              <div class="comments__item-img"><img src="img/user.jpg" alt="" class="comments__item-ava"></div>
+              <div class="comments__item-tail">
+                <p class="comments__item-name">Tú</p>
+                <p class="comments__item-text"></p>
+                <p class="comments__item-date">
+                  Justo ahora
+                </p>
+              </div>
+            </div>
+          </li>
+          <!--Шаблон коммента юзера-->
+        </ul>
+        <div class="comments__form">
+          <h3 class="comments__form-title">Agregar comentario:</h3>
+          <textarea name="comment" rows="5" class="comments__form-textarea"></textarea>
+          <p class="comments__form-error">Campo requerido</p>
+          <button class="comments__form-submit">Enviar comentario</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer id="footer" role="contentinfo">
+    <div class="gb-footer">
+      <div class="gb-footer__top">
+        <div class="gb-footer__inner">
+          <div class="gb-footer__container">
+            <div class="gb-footer__copyright">
+              <p class="gb-footer__text">Derechos de autor © <span class="ryear"></span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <button class="up"></button>
+  <script src="js/jquery-ui.min.js"></script>
+  <script src="js/jquery.ui.touch-punch.min.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    $(document).ready(function(){
+      var flag_stopwatch = true;
+      $('.screen_two_play').click(function(e) {
+        e.preventDefault();
+        $('body,html').scrollTop(0);
+        $('section.comments').css('opacity', '1');
+        $('.screen_two').css('opacity', '1');
+        $('.screen_one').fadeOut();
+        $('.screen_one_header').removeClass('screen_one_header');
+        // stopwatch()
+        return false;
+      });
+      $('.puzzle').mousedown(function() {
+        if (flag_stopwatch) {
+          stopwatch();
+          flag_stopwatch = false;
+        }
+      });
+    })
+  </script>
+</body>
+
+</html>

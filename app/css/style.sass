@@ -1,0 +1,1049 @@
+@font-face
+  font-family: "SamsungOne"
+  src: url(../fonts/SamsungOne-400.eot)
+  src: url(../fonts/SamsungOne-400.eot?#iefix) format("embedded-opentype"), url(../fonts/SamsungOne-400.woff2) format("woff2"), url(../fonts/SamsungOne-400.woff) format("woff"), url(../fonts/SamsungOne-400.ttf) format("truetype")
+  font-weight: normal
+  font-style: normal
+
+@font-face
+  font-family: "SamsungOne"
+  src: url(../fonts/SamsungOne-700.eot)
+  src: url(../fonts/SamsungOne-700.eot?#iefix) format("embedded-opentype"), url(../fonts/SamsungOne-700.woff2) format("woff2"), url(../fonts/SamsungOne-700.woff) format("woff"), url(../fonts/SamsungOne-700.ttf) format("truetype")
+  font-weight: bold
+  font-style: normal
+
+@font-face
+  font-family: "SamsungSharpSans"
+  src: url(../fonts/SamsungSharpSansBd.eot)
+  src: url(../fonts/SamsungSharpSansBd.eot?#iefix) format("embedded-opentype"), url(../fonts/SamsungSharpSansBd.woff) format("woff")
+  font-weight: bold
+  font-style: normal
+html, body
+  -webkit-text-size-adjust: none
+  box-sizing: border-box
+body,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,p,table,th,td,form,fieldset,legend,textarea,input,select,textarea,button,figure,figcaption
+  margin: 0
+  padding: 0
+  font-family: Ubuntu
+  box-sizing: border-box
+div 
+  box-sizing: border-box
+img,form,fieldset,svg
+  border: 0
+  vertical-align: top
+input,button,select
+  -webkit-border-radius: 0
+  border-radius: 0
+  -webkit-appearance: none
+  -moz-appearance: none
+  appearance: none
+button
+  border: 0
+  background: none
+  cursor: pointer
+ul,ol
+  list-style: none
+a
+  text-decoration: none
+a:hover
+  text-decoration: none
+
+body,textarea,input,select,textarea,button
+  font-family: "SamsungOne", arial
+  line-height: 1.32
+
+.clearfix:after 
+  content: ""
+  display: table
+  clear: both
+
+body
+  background-color: #000
+  transition: all .5s ease-out
+.container 
+  max-width: 1200px
+  margin: 0 auto
+.btn 
+  border: 2px solid #FFFFFF
+  border-radius: 25px
+  min-width: 260px
+  padding: 12px
+  font-weight: bold
+  font-size: 20px
+  text-transform: uppercase
+  color: #fff
+  display: inline-block
+  overflow: hidden
+  position: relative
+  cursor: pointer
+  span 
+    position: relative
+    z-index: 2
+    transition: all .5s ease-out
+    cursor: pointer
+.btn:after
+  content: ''
+  display: block
+  position: absolute
+  width: 160%
+  height: 250%
+  left: -50%
+  top: -50%
+  transform: rotate(-10deg) translateX(-100%)
+  background-color: #fff
+  transition: all .5s ease-out
+  cursor: pointer
+.btn:hover 
+  span 
+    color: #000
+.btn:hover:after
+  transform: rotate(-10deg)
+header 
+  padding: 20px 0
+  text-align: center
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2)
+  position: relative
+  z-index: 151
+  .logo
+    float: left
+    padding: 2px 0
+  .sublogo
+    display: inline-block
+    font-family: Ubuntu
+    font-size: 20px
+    color: #FFFFFF
+    margin: 0
+    line-height: 1
+  .flag 
+    float: right
+header.screen_one_header
+  position: fixed
+  width: 100%
+  left: 0
+  top: 0
+.screen_one
+  background-image: url('../img/bg1.jpg')
+  background-repeat: no-repeat
+  background-size: cover
+  background-position: center center
+  height: 100vh
+  position: fixed
+  left: 0
+  top: 0
+  width: 100%
+  // display: none
+  z-index: 150
+.screen_one_body
+  position: absolute
+  left: 50%
+  top: 50%
+  transform: translate(-50%, -50%)
+  color: #fff
+  text-align: center
+  font-family: Ubuntu
+  width: 90%
+  max-width: 1200px
+  h1  
+    font-weight: bold
+    font-size: 60px
+    margin: 0
+    margin-bottom: 25px
+  h2 
+    font-weight: normal
+    font-size: 30px
+    line-height: 48px
+    margin: 0
+    margin-bottom: 25px
+.screen_two
+  position: relative
+  opacity: 0
+  padding-bottom: 100px
+  overflow: hidden
+  section.coundown 
+    position: relative
+    background: #000 url("../img/timer_bg.png")
+    background-repeat: repeat-x
+    background-position: bottom center
+    background-size: 100% 100%
+    margin-top: 80px
+    h2 
+      font-weight: bold
+      font-size: 28px
+      margin: 0
+      color: #fff
+      text-align: center
+      position: absolute
+      left: 0
+      top: -60px
+      width: 100%
+    .countdown-wrap
+      max-width: 990px
+      margin: 0 auto
+      position: relative
+  section.instructions
+    text-align: center
+    color: #fff
+    position: relative
+    z-index: 2
+    margin-bottom: 20px
+    h2 
+      font-weight: bold
+      font-size: 40px
+      margin: 0
+      margin-bottom: 25px
+    p.desc
+      font-weight: bold
+      font-size: 20px
+      line-height: 32px
+      margin-bottom: 55px
+    .steps
+      .step 
+        display: inline-block
+        width: auto
+        vertical-align: top
+        position: relative
+        padding-right: 15px
+        box-sizing: border-box
+        text-align: left
+        max-width: 24%
+        font-size: 14px
+        margin-bottom: 15px
+        span 
+          display: inline-block
+          width: 75%
+          width: calc(100% - 50px)
+          vertical-align: middle
+      .step:nth-of-type(1)
+        margin-left: 3%
+      .step:before 
+        content: ''
+        display: inline-block
+        left: 0
+        top: 0
+        width: 40px
+        height: 40px
+        border: 2px solid #FFF
+        color: #fff
+        font-weight: bold
+        font-size: 20px
+        line-height: 35px
+        text-align: center
+        border-radius: 100%
+        box-sizing: border-box
+        vertical-align: middle
+        margin-right: 10px
+      .step1:before
+        content: '1'
+      .step2:before
+        content: '2'
+      .step3:before
+        content: '3'
+      .step4:before
+        content: '4'
+  section.instructions.mt-2
+    margin-top: 70px
+    top: 0 !important
+  section.instructions + section.coundown
+    margin-top: 0
+    margin-bottom: 25px
+  section.puzzle 
+    position: relative
+    background-color: #000000
+    margin: 50px 0
+    .puzzle-comp 
+      position: relative
+      width: 90%
+      max-width: 864px
+      margin: 0 auto
+      padding: 0.05px
+    .puzzle-comp:before 
+      content: ''
+      display: block
+      padding-top: 58.33333333%
+    .puzzle-comp>* 
+      position: absolute
+      left: 0
+      top: 0
+      width: 100%
+      height: 100%
+    .puzzle-comp.complete 
+      video 
+        opacity: 1
+      .puzzle
+        opacity: 0
+    .puzzle-comp 
+      .hilite 
+        position: absolute
+        left: 50%
+        top: 50%
+        transform: translate(-50%, -50%)
+        width: 166.6666667%
+        opacity: 0
+        transition: opacity 0.5s
+      video 
+        position: absolute
+        left: 0
+        top: 0
+        width: 100%
+        height: 100%
+        opacity: 0
+        object-fit: fill
+        transition: opacity 0.2s
+      div.puzzle 
+        position: absolute
+        left: 0
+        top: 0
+        width: 100%
+        height: 100%
+        transition: opacity 0.2s
+      div.puzzle.complete 
+        .tile 
+          transform: none !important
+          transition: transform 1s !important
+          cursor: default !important
+      div.puzzle 
+        .tile 
+          position: relative
+          position: absolute
+          width: 33.33333333%
+          background: url("../img/puzzle-noclip.svg") no-repeat
+          background-size: 300% 300%
+          opacity: 0.7
+          cursor: pointer
+          transition: transform 0.5s, opacity 0.5s, transform 0.5s
+        .tile:before 
+          content: ''
+          display: block
+          padding-top: 58.33333333%
+        .tile.ui-draggable-dragging 
+          opacity: 0.9
+          transform: scale(1.1)
+          box-shadow: inset 0 0 4px 4px #6de5ff
+        .tile.being-dragged 
+          visibility: hidden
+        .tile:nth-of-type(1) 
+          left: 0
+          top: 0
+          transform: translate(-5px, -4px)
+        .tile:nth-of-type(2) 
+          left: 33.33333333%
+          top: 0
+          transform: translate(0, -4px)
+        .tile:nth-of-type(3) 
+          left: 66.66666667%
+          top: 0
+          transform: translate(5px, -4px)
+        .tile:nth-of-type(4) 
+          left: 0
+          top: 33.33333333%
+          transform: translate(-5px, 0)
+        .tile:nth-of-type(5) 
+          left: 33.33333333%
+          top: 33.33333333%
+          transform: translate(0, 0)
+        .tile:nth-of-type(6) 
+          left: 66.66666667%
+          top: 33.33333333%
+          transform: translate(5px, 0)
+        .tile:nth-of-type(7) 
+          left: 0
+          top: 66.66666667%
+          transform: translate(-5px, 4px)
+        .tile:nth-of-type(8) 
+          left: 33.33333333%
+          top: 66.66666667%
+          transform: translate(0, 4px)
+        .tile:nth-of-type(9) 
+          left: 66.66666667%
+          top: 66.66666667%
+          transform: translate(5px, 4px)
+        .tile.in-place 
+          opacity: 1
+    .guide 
+      width: 90%
+      max-width: 864px
+      margin: -15% auto 5% auto
+      display: flex
+      justify-content: space-between
+      align-items: center
+      font-size: 2vw
+    .check_block
+      color: #fff
+      display: none
+      position: absolute
+      top: 50%
+      transform: translate(-50%, -50%)
+      left: 50%
+      width: 100%
+      z-index: 2
+      .check
+        width: 100%
+        .line_box
+          text-align: left
+          position: relative
+          width: 70%
+          margin: 0 auto
+          .line_text
+            display: none
+          .line_text.step_1
+            display: block
+          .line_block
+            width: 0%
+            height: 10px
+            border-radius: 10px
+            background: linear-gradient(to right, #ffffff 0%, #39fff3 100%)
+            margin-top: 15px
+            transition: all .1s ease-out
+          .line_percent
+            position: absolute
+            right: 0
+            top: 0
+            font-size: 14px
+            font-weight: bold
+            background-color: #000
+        ul
+          text-align: center
+          width: 90%
+          margin: 0 auto
+          li
+            margin-top: 30px
+            margin-right: 20px
+            display: inline-block
+            max-width: 30%
+            .loading
+              display: inline-block
+              vertical-align: middle
+              width: 40px
+              height: 40px
+              background-image: url("../img/loading.gif")
+              background-repeat: no-repeat
+              background-size: cover
+              background-position: center center
+              margin-right: 15px
+            .loaded
+              background-image: url("../img/loaded.png")
+            span
+              display: inline-block
+              vertical-align: middle
+              max-width: 80%
+              text-align: left
+  section.congrats 
+    position: absolute
+    top: 0
+    left: 0
+    background-color: rgba(0,0,0,.2)
+    width: 100%
+    height: 100%
+    z-index: 10
+    display: none
+    .filter 
+      position: absolute
+      width: 90%
+      max-width: 876px
+      height: 512px
+      bottom: 146px
+      left: 50%
+      transform: translateX(-50%)
+      padding: 0.05px
+      .blur
+        position: absolute
+        left: 0
+        top: 0
+        width: 100%
+        height: 100%
+        background: linear-gradient(163.7deg, #2BC8F4 0%, #DA1DA2 100%)
+        filter: blur(30px)
+    .content
+      width: 100%
+      max-width: 864px
+      height: 504px
+      background-color: #000
+      text-align: center
+      color: #fff
+      position: absolute
+      left: 50%
+      top: 50%
+      transform: translate(-50%, -50%)
+      h2
+        margin-top: 20px
+        margin-bottom: 20px 
+        font-weight: bold
+        font-size: 40px
+        text-transform: uppercase
+      p.desc 
+        font-weight: bold
+        font-size: 20px
+        margin-bottom: 30px
+      .coundown
+        background: #fff url("../img/timer_bg.png")
+        background-repeat: repeat-x
+        background-position: center center
+        background-size: 100% 100%
+    .image_block
+      // background-image: url('../img/prod.jpg')
+      background-repeat: no-repeat
+      background-size: auto
+      background-position: center 70px
+      overflow: hidden
+      h2 
+        margin-bottom: 0
+        position: relative
+        z-index: 1
+      .desc
+        position: relative
+        z-index: 1
+      .prod 
+        position: absolute
+        left: 0
+        top: 70px
+        z-index: 0
+        max-width: 100%
+      .btn
+        position: absolute
+        bottom: 115px
+        left: 50%
+        transform: translateX(-50%)
+        color: #000
+        border-color: #000
+        min-width: 200px
+      .btn:hover
+        span 
+          color: #fff
+      .btn:after 
+        background-color: #000
+    .subdesc
+      position: absolute
+      bottom: 15px
+      left: 0
+      width: 100%
+      text-align: center
+      font-size: 18px
+      br 
+        display: none
+      span
+        font-weight: bold
+    .check_block
+      background-image: url("../img/prod.jpg")
+      background-repeat: no-repeat
+      background-size: auto
+      background-position: center 70px
+      position: absolute
+      z-index: 2
+      .check
+        width: 100%
+        height: 100%
+        position: absolute
+        background-color: rgba(0, 0, 0, 0.8)
+        h2, .desc
+          opacity: 0
+        .line_box
+          text-align: left
+          position: relative
+          width: 90%
+          margin: 0 auto
+          .line_text
+            display: none
+          .line_text.step_1
+            display: block
+          .line_block
+            width: 0%
+            height: 10px
+            border-radius: 10px
+            background: linear-gradient(to right, #ffffff 0%, #39fff3 100%)
+            margin-top: 15px
+            transition: all .1s ease-out
+          .line_percent
+            position: absolute
+            right: 0
+            top: 0
+            font-size: 14px
+            font-weight: bold
+            background-color: #000
+        ul
+          text-align: left
+          width: 90%
+          margin: 0 auto
+          li
+            margin-top: 30px
+            .loading
+              display: inline-block
+              vertical-align: middle
+              width: 40px
+              height: 40px
+              background-image: url("../img/loading.gif")
+              background-repeat: no-repeat
+              background-size: cover
+              background-position: center center
+              margin-right: 15px
+            .loaded
+              background-image: url("../img/loaded.png")
+            span
+              display: inline-block
+              vertical-align: middle
+  section.coundown + section.puzzle
+    margin-top: 0
+section.comments
+  background-color: #fff
+  position: relative
+  z-index: 5
+  padding: 30px 0
+  opacity: 0
+  color: #363636
+  .comments__inner 
+    max-width: 850px
+    margin: 0 auto
+    padding: 0 15px
+  .comments__title 
+    text-align: center
+    font-weight: bold
+    font-size: 30px
+    margin: 0 0 20px
+  .comments__list 
+    overflow: hidden
+  .comments__item 
+    font-size: 18px
+    padding: 20px 0
+    border-top: 1px solid #eee
+    .comments__item-inner 
+      display: table
+      table-layout: fixed
+    .comments__item-img, .comments__item-tail 
+      display: table-cell
+      vertical-align: top
+    .comments__item-img 
+      width: 50px
+    .comments__item-tail 
+      padding-left: 25px
+    .comments__item-ava 
+      border-radius: 50%
+      overflow: hidden
+      box-shadow: 0 5px 10px rgba(0, 0, 0, .08)
+    .comments__item-name 
+      font-weight: 800
+    .comments__item-text 
+      margin: 10px 0
+    .comments__item-date 
+      font-style: italic
+      color: #363636
+      font-size: 14px
+    .comments__item--answer 
+      margin-left: 75px
+      border-top: none
+    .comments__item--user,
+    .comments__item--leave
+      display: none
+  .comments__item:first-of-type 
+    border-top: none
+  .comments__form 
+    margin-top: 50px
+    .comments__form-title 
+      margin-bottom: 20px
+      font-size: 25px
+    .comments__form-textarea 
+      width: 100%
+      border: 1px solid #eee
+      outline: none
+    .comments__form-submit 
+      margin-top: 25px
+      outline: none
+      font-size: 15px
+      text-align: center
+      text-decoration: none
+      padding: 8px 20px
+      line-height: 1
+      color: #000
+      border: 1px solid #000
+      border-radius: 100px
+      transition: opacity 0.5s
+    .comments__form-submit:hover 
+      background-color: #000
+      color: #fff
+    .comments__form-error 
+      margin: 5px 0 0
+      font-size: 13px
+      color: #d83316
+      display: none
+
+.gb-footer
+  border-top: 1px solid #d0d0d0
+  background: #363636
+  font-size: 0
+  color: #fff
+
+.gb-footer__inner 
+  max-width: 1440px
+  margin: 0 auto
+  padding: 0px 118px
+  padding: 0vw 8.19444vw
+  box-sizing: border-box
+
+.gb-footer__container 
+  position: relative
+  font-size: 16px
+  font-weight: bold
+  box-sizing: border-box
+
+.gb-footer__container:before, .gb-footer__container:after 
+  content: ''
+  display: block
+  clear: both
+.gb-footer__top 
+  padding: 50px 0
+  text-align: center
+
+.gb-footer__copyright 
+  font-size: 12px
+  color: #363636
+  font-weight: normal
+  word-break: break-word
+
+.gb-footer__copyright .gb-footer__text 
+  color: #fff
+  line-height: 1
+
+.up
+  width: 58px
+  height: 58px
+  border-radius: 4px
+  background: #363636
+  font-size: 0
+  opacity: .7
+  position: fixed
+  right: 32px
+  bottom: 20px
+  z-index: 99
+  border: 1px solid #555
+  display: none
+
+.up:hover 
+  background-color: darken(#363636, 5%)
+
+.up:after 
+  overflow: hidden
+  display: inline-block
+  width: 36px
+  height: 22px
+  margin: 18px auto
+  background: url(../img/btn-gotop.png) no-repeat
+  background-size: 100%
+  content: ''
+
+@media screen and (max-width: 1250px)
+  .container
+    max-width: 990px
+    padding: 0 10px
+    box-sizing: border-box
+  .screen_two 
+    section.instructions 
+      .steps 
+        .step
+          max-width: 100%
+          width: 45%
+        .step:nth-of-type(1)
+          margin-left: 0
+@media screen and (max-width: 850px)
+  .btn 
+    cursor: default
+  .btn:after
+    display: none
+  .btn:hover
+    color: #fff
+  .screen_two 
+    section.instructions 
+      .steps 
+        display: inline-block
+        .step
+          display: block
+          width: 100%
+          max-width: 100%
+          min-height: 40px
+          margin: 0
+          padding: 0
+          margin-bottom: 10px
+          text-align: left
+          span 
+            width: auto
+        .step:nth-of-type(1)
+          margin: 0
+          margin-bottom: 10px
+        .step:before
+          display: inline-block
+          position: static
+          margin-right: 10px
+    section.puzzle
+      margin-top: 0
+      .check_block 
+        .check
+          .line_box
+            width: 100%
+            font-size: 14px
+          ul
+            width: 100%
+            li
+              display: block
+              max-width: 100%
+              margin-top: 10px
+              text-align: left
+              margin-right: 0
+              font-size: 14px
+              .loading
+                width: 30px
+                height: 30px
+    section.congrats 
+      z-index: 15
+      .filter
+        height: auto
+        .content 
+          max-height: none
+          height: auto
+          position: relative
+          transform: none
+          left: 0
+          top: 0
+          padding: 20px 0 50px
+          h2 
+            margin-top: 0
+        .image_block
+          height: 500px
+          background-position: center center
+          background-size: 100% auto
+          .btn 
+            bottom: 50px
+            color: #fff
+            border-color: #fff
+            min-width: 200px
+          .btn:hover
+            span 
+              color: #000
+          .btn:after 
+            background-color: #fff
+          .subdesc
+            font-size: 14px
+            
+        .check_block
+          position: absolute
+          height: 100%
+          background-position: center center
+          background-size: 100% auto
+          p.desc
+            margin-bottom: 15px
+          .check
+            .line_box p
+              font-size: 14px
+            ul li
+              .loading
+                width: 30px
+                height: 30px
+                margin-right: 10px
+              span
+                font-size: 14px
+                max-width: 80%
+  section.comments
+    padding: 20px 0
+    .comments__title
+      margin-bottom: 10px
+@media screen and (max-width: 500px)
+  .screen_one_body 
+    h1
+      font-size: 30px
+      margin-bottom: 15px
+    h2 
+      font-size: 16px
+      line-height: 1.5
+      margin-bottom: 40px
+  .screen_two 
+    section.instructions.mt-2
+      margin-top: 20px
+    section.congrats 
+      .filter 
+        h2
+          font-size: 20px
+        p.desc 
+          font-size: 16px
+        .image_block 
+          height: auto
+          padding: 20px 0
+          .desc 
+            margin-bottom: 0
+          .prod
+            position: static
+            margin-top: 10px
+          .btn 
+            bottom: 0
+            left: 0
+            position: relative
+            transform: none
+          .subdesc
+            position: relative
+            bottom: 0
+            margin-top: 10px
+            br 
+              display: block
+        // .image_block_small
+        //   height: 400px
+        //   .btn 
+        //     bottom: 25px
+@media screen and (max-width: 500px)
+  header 
+    text-align: left
+    .logo
+      float: none
+      display: inline-block
+      vertical-align: middle
+      margin-right: 10px
+    .sublogo
+      vertical-align: middle
+  .container
+    max-width: 100%
+    padding: 0 15px
+  .screen_two 
+    padding-bottom: 10px
+    section.coundown 
+      h2 
+        font-size: 35px
+    section.instructions
+      top: 0 
+      h2
+        font-size: 20px
+        margin-bottom: 10px
+      p.desc
+        font-size: 12px
+        line-height: 1.5
+        margin-bottom: 40px
+      .steps 
+        .step
+          text-align: left
+          font-size: 14px
+          vertical-align: middle
+          span 
+            max-width: 80%
+            max-width: calc(100% - 40px)
+        .step:before
+          width: 30px
+          height: 30px
+          line-height: 27px
+
+    section.congrats 
+      .filter
+        bottom: 46px
+        .content
+          h2 
+            margin-bottom: 0
+        .btn
+          margin-top: 20px
+  section.comments
+    .comments__title 
+      font-size: 25px 
+    .comments__item 
+      font-size: 14px
+      padding: 10px 0
+      .comments__item-img, .comments__item-tail
+        display: block
+      .comments__item-tail
+        padding-left: 0
+      .comments__item-img
+        float: left
+        margin-right: 10px
+        width: 40px
+        .comments__item-ava 
+          max-width: 100%
+      .comments__item-name
+        padding-top: 10px
+        padding-bottom: 10px
+    .comments__form
+      margin-top: 20px
+      .comments__form-title
+        font-size: 18px
+@media screen and (max-width: 850px) and (orientation: landscape)
+  .screen_one_body 
+    h1
+      font-size: 30px
+      margin-bottom: 15px
+    h2 
+      font-size: 16px
+      line-height: 1.5
+      margin-bottom: 20px
+  .container
+    max-width: 300px
+    padding: 0 15px
+  header 
+    text-align: left
+    .logo
+      float: none
+      display: inline-block
+      vertical-align: middle
+      margin-right: 10px
+    .sublogo
+      vertical-align: middle
+  .screen_two 
+    padding-bottom: 10px
+    section.coundown 
+      h2
+        font-size: 35px
+    section.instructions
+      top: 0 
+      h2
+        font-size: 20px
+        margin-bottom: 10px
+      p.desc
+        font-size: 12px
+        line-height: 1.5
+        margin-bottom: 40px
+      .steps 
+        .step
+          text-align: left
+          padding-left: 40px
+          font-size: 14px
+          vertical-align: middle
+          width: 100%
+        .step:before
+          position: absolute
+          width: 30px
+          height: 30px
+          line-height: 27px
+    section.instructions.mt-2
+      margin-top: 20px
+    section.puzzle 
+      .puzzle-comp
+        max-width: 300px
+    section.congrats 
+      .filter
+        bottom: 46px 
+        max-width: 300px
+        h2
+          font-size: 20px
+          margin-bottom: 0
+        p.desc 
+          font-size: 18px
+        .image_block 
+          height: auto
+          padding: 20px 0
+          .desc 
+            margin-bottom: 0
+          .prod
+            position: static
+            margin-top: 10px
+          .btn 
+            bottom: 0
+            left: 0
+            position: relative
+            transform: none
+          .subdesc
+            position: relative
+            bottom: 0
+            br 
+              display: block
+        .btn
+          margin-top: 20px
+  section.comments 
+    .comments__item 
+      .comments__item-img, .comments__item-tail
+        display: block
+      .comments__item-tail
+        padding-left: 0
+      .comments__item-img
+        float: left
+        margin-right: 10px
+      .comments__item-name
+        padding-top: 15px
+        padding-bottom: 10px
