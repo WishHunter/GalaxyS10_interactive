@@ -47,27 +47,15 @@ gulp.task('clean', function() {
     return del.sync('dist'); // Удаляем папку dist перед сборкой
 });
 
-// gulp.task('img', function() {
-// 	return gulp.src('C:/Users/Eclerr/Desktop/Projects/Shablon/app/img/**/*') // Берем все изображения из app
-// 	.pipe(cache(imagemin({  // Сжимаем их с наилучшими настройками с учетом кеширования
-// 		optimizationLevel: 2,
-// 		interlaced: true,
-// 		progressive: true,
-// 		svgoPlugins: [{removeViewBox: false}],
-// 		use: [pngquant()]
-// 	})))
-// 	.pipe(gulp.dest('C:/Users/Eclerr/Desktop/Projects/Shablon/dist/img')); // Выгружаем на продакшен
-// });
-
 gulp.task('img', function() {
-	return gulp.src('C:/Users/Eclerr/Desktop/Projects/Shablon/app/img/**/*') // Берем все изображения из app
+	return gulp.src('app/img/**/*') // Берем все изображения из app
 	.pipe(cache(imagemin([  // Сжимаем их с наилучшими настройками с учетом кеширования
 		imagemin.optipng({optimizationLevel: 7}),
 		imagemin.gifsicle({interlaced: true}),
 		imagemin.jpegtran({progressive: true}),
 		imagemin.svgo({ plugins: [{removeViewBox: true},{cleanupIDs: false}]}),
 	])))
-	.pipe(gulp.dest('C:/Users/Eclerr/Desktop/Projects/Shablon/dist/img')); // Выгружаем на продакшен
+	.pipe(gulp.dest('dist/img')); // Выгружаем на продакшен
 });
 
 gulp.task('prebuild', async function() {
